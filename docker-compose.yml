@@ -2,25 +2,25 @@
 version: "3.8"
 services:
   movies:
-    image: saibootla/moviesrepo:latest
+    image: saibootla/paytmmoviesrepo:latest
     ports:
       - 81:80
     deploy:
       replicas: 3
   train:
-    image: saibootla/trainrepo:latest
+    image: saibootla/paytmtrainrepo:latest
     ports:
       - 82:80
     deploy:
       replicas: 3
   recharge:
-    image: saibootla/dthrepo:latest
+    image: saibootla/paytmrechargerepo:latest
     ports:
       - 83:80
     deploy:
       replicas: 3
   dth:
-    image: saibootla/rechargerepo:latest
+    image: saibootla/paytmdthrepo:latest
     ports:
       - 84:80
     deploy:
